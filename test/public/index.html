@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+   
+
+
+    <title>Login</title>
+  </head>
+  <body>
+     <div id="root"></div>
+     
+     <form>
+      <img class = "logo " src="syndiclogo.svg" alt="logo" />
+     
+          <label for="email">Email : </label>
+          <input type="email" id="email" placeholder = "votre@mail.com" >
+     
+          <label for="mdp">Mot de passe :</label>
+          <input type="text" id="mdp" name="user_mdp" placeholder = "*********">
+     
+        <button onclick="mail()">SE CONNECTER</button>
+    
+  </form>
+
+<script>
+
+function mail() {
+   
+    var email = document.getElementById("email").value;
+
+    alert("bienvenue : " + email); 
+    console.log(email)
+
+</script>
+  </body>
+</html>
